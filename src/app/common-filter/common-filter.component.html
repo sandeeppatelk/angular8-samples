@@ -1,0 +1,25 @@
+<p>common-filter works!</p>
+pipes
+<span>{{name}}</span><br>
+lowercase :- <span>{{name | lowercase}}</span><br>
+uppercase :- <span>{{name | uppercase}}</span><br>
+titleCase :- <span>{{name | titlecase}}</span><br>
+slice :- <span>{{name | slice:3:5}}</span><br>
+<h5>{{person | json}}</h5>
+<h5>{{5.678787 | number:'1.2-3'}}</h5>
+<h5>{{5.678787 | number:'3.4-5'}}</h5>
+<h5>{{5.678787 | number:'3.1-2'}}</h5>
+<h5>{{0.678787 | percent}}</h5>
+<h5>{{0.678787 | currency}}</h5>
+<h5>{{0.678787 | currency : 'INR'}}</h5>
+<h5>{{0.678787 | currency : 'INR' : 'code'}}</h5>
+<h5>{{date}}</h5>
+<h5>{{date | date:'short'}}</h5>
+<h5>{{date | date:'shortDate'}}</h5>
+<h5>{{date | date:'shortTime'}}</h5>
+<h5>{{date | date:'medium'}}</h5>
+<h5>{{date | date:'mediumDate'}}</h5>
+<h5>{{date | date:'mediumTime'}}</h5>
+<h5>{{date | date:'long'}}</h5>
+<h5>{{date | date:'longDate'}}</h5>
+<h5>{{date | date:'longTime'}}</h5>

@@ -1,0 +1,34 @@
+<h1>4. Conditions component!</h1>
+
+<hr />
+
+simple ngIF and else block
+
+<h1 *ngIf="displayName; else elseBlock">
+    ngIf block
+</h1>
+<ng-template #elseBlock>
+    <h2>else part</h2>
+</ng-template>
+<hr />
+<h1>ng template thenBlock and elseBlock</h1>
+
+<div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+    <h3>then block</h3>
+</ng-template>
+<ng-template #elseBlock>
+    <h3>elseBlock</h3>
+    <ng-template>
+        <hr />
+    </ng-template>
+</ng-template>
+<hr />
+ngSwitch
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">you picked red color</div>
+    <div *ngSwitchCase="'blue'">you picked blue color</div>
+    <div *ngSwitchCase="'green'">you picked green color</div>
+    ngSwitchDefault := <div *ngSwitchDefault>pick again</div>if color doesn't match ngSwitchDefault div block render
+</div>

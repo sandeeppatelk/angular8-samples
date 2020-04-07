@@ -1,0 +1,8 @@
+<h1>employee-detail</h1>
+getting service data from employee-list component
+<table *ngFor="let employee of employees">
+    <td>{{employee.id}}-{{employee.name}}-{{employee.age}}</td>
+</table>
+<h3>
+    {{errorMsg}}
+</h3>
